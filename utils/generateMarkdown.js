@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![Github License](https://img.shields.io/badge/License-${license}-yellow.svg)`;
+    return `![Github License](https://img.shields.io/badge/License-${license}-green.svg)`;
   } else {
     return " ";
   }
@@ -24,7 +24,7 @@ function renderLicenseSection(license) {
   if (license !== "None") {
     return `## Licenses
     
-    The license being used: ${license}`;
+    The license used for this application: ${license}`;
   } else {
     return " ";
   }
@@ -33,15 +33,51 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
 
   ## Description
 
   ${data.description}
 
+  ## Table of Contents
 
-  ${renderLicenseBadge(data.license)}
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[Credits](#credits)
   ${renderLicenseLink(data.license)}
+  *[Contributers](#contribute)
+  *[Tests](#test)
+  *[Questions](#questions)
+
+  ## Installation
+
+  To install necessary dependencies, run the following command:
+
+  npm i
+
+  ## Usage
+
+  Open the terminal > type "node index.js" in correct directory > input information
+
   ${renderLicenseSection(data.license)}
+
+  ## Contributing
+
+  ${data.contribution}
+
+  ## Tests
+
+  To run tests, run the following command:
+
+  npm test
+  
+  ## Questions
+      
+  Here is a link to my Github profile: ${data.github}
+  Contact me by email here: ${data.email}
+  
+  
+  
 
 `;
 }

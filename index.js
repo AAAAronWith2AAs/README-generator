@@ -19,7 +19,7 @@ const questions = [
   {
     type: "list",
     message: "License type:",
-    choices: ["MIT", "ISC", "GPL3.0", "BSD 3", "None"],
+    choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
     name: "license",
   },
   {
@@ -32,6 +32,26 @@ const questions = [
     message: "Email address:",
     name: "email",
   },
+  // {
+  //   type: "input",
+  //   message: "Enter the command to install necessary dependencies: ",
+  //   name: "installation",
+  // },
+  // {
+  //   type: "input",
+  //   message: "Enter your usage information: ",
+  //   name: "usage",
+  // },
+  {
+    type: "input",
+    message: "Enter your contribution guidelines: ",
+    name: "contribution",
+  },
+  // {
+  //   type: "input",
+  //   message: "Enter the test commands: ",
+  //   name: "test",
+  // },
 ];
 
 // TODO: Create a function to write README file
@@ -43,7 +63,7 @@ function writeToFile(fileName, data) {
 function init() {
   //user wil see the first question
   inquirer.prompt(questions).then((data) => {
-    writeToFile("READ.md", generateMarkdown({ ...data }));
+    writeToFile("README.md", generateMarkdown({ ...data }));
   });
 }
 
