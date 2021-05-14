@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![Github License](https://img.shields.io/badge/License-${license}-green.svg)`;
+    return `![License](https://img.shields.io/badge/License-${license}-green.svg)`;
   } else {
     return " ";
   }
@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `\n* [License](#license)\n`;
+    return `\n * [License](#license)\n`;
   } else {
     return " ";
   }
@@ -33,6 +33,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
   ${renderLicenseBadge(data.license)}
 
   ## Description
@@ -41,13 +42,13 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
-  *[Installation](#installation)
-  *[Usage](#usage)
-  *[Credits](#credits)
-  ${renderLicenseLink(data.license)}
-  *[Contributers](#contribute)
-  *[Tests](#test)
-  *[Questions](#questions)
+    *[Installation](#installation)
+    *[Usage](#usage)
+    *[Credits](#credits)
+    *[License](#license)
+    *[Contributors](#contribute)
+    *[Tests](#test)
+    *[Questions](#questions)
 
   ## Installation
 
@@ -60,6 +61,7 @@ function generateMarkdown(data) {
   Open the terminal > type "node index.js" in correct directory > input information
 
   ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Contributing
 
@@ -74,6 +76,7 @@ function generateMarkdown(data) {
   ## Questions
       
   Here is a link to my Github profile: ${data.github}
+
   Contact me by email here: ${data.email}
   
   

@@ -1,21 +1,20 @@
-# weeravaerv
-  ![Github License](https://img.shields.io/badge/License-MIT-green.svg)
+# README
+
+  ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
   ## Description
 
-  erverver
+  Created a README file
 
   ## Table of Contents
 
-  *[Installation](#installation)
-  *[Usage](#usage)
-  *[Credits](#credits)
-  
-* [License](#license)
-
-  *[Contributers](#contribute)
-  *[Tests](#test)
-  *[Questions](#questions)
+    *[Installation](#installation)
+    *[Usage](#usage)
+    *[Credits](#credits)
+    *[License](#license)
+    *[Contributors](#contribute)
+    *[Tests](#test)
+    *[Questions](#questions)
 
   ## Installation
 
@@ -30,10 +29,13 @@
   ## Licenses
     
     The license used for this application: MIT
+  
+ * [License](#license)
+
 
   ## Contributing
 
-  veqrver
+  Aaron Mendoza
 
   ## Tests
 
@@ -43,8 +45,9 @@
   
   ## Questions
       
-  Here is a link to my Github profile: erververv
-  Contact me by email here: ervrever
+  Here is a link to my Github profile: AaronDMendoza
+
+  Contact me by email here: aaronmendoza.denver@gmail.com
   
   
   
